@@ -228,6 +228,5 @@ if __name__ == "__main__":
         # 获取词霸每日金句
         note_ch, note_en = get_ciba()
     # 公众号推送消息
-    for user inusers:
         send_message(user, accessToken, region, weather, temp, wind_dir, note_ch, note_en)
     os.system("pause")
