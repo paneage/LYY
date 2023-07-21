@@ -93,9 +93,10 @@ if __name__ == "__main__":
     region = config["region"]
     weather, temp, wind_dir = get_weather(region)
     note_ch = config["note_ch"]
-    note_en = config["note_en"]
-    if note_ch == "" and note_en == "":
+    if note_ch == ":
          # 获取词霸每日金句
+         note_ch
     # 公众号推送消息
+    for user in users:
          send_message(user, accessToken, region, weather, temp, wind_dir)
     os.system("pause")
