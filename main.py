@@ -98,5 +98,5 @@ if __name__ == "__main__":
          # 获取词霸每日金句
     # 公众号推送消息
     for user in users:
-        send_message(users, accessToken, region, weather, temp, wind_dir)
+         send_message(user, accessToken, region, weather, temp, wind_dir)
     os.system("pause")
